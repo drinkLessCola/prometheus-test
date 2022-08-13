@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import './index.css'
 import Section from '../../Component/Section'
 import { JSData, PromiseData, ResourceData } from './error'
 export default function ThrowError() {
