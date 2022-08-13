@@ -1,0 +1,47 @@
+.section {
+  margin: 40px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  font-family: 'PingFang SC Semibold';
+  position: relative;
+  color: rgb(96, 93, 114);
+  padding-left: 5px;
+  margin: 20px 0;
+}
+
+.section h2::after {
+  content: '#';
+  color: rgb(252, 193, 173);
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section button {
+  width:180px;
+  border:none;
+  background-color: rgb(255, 191, 62);
+  color:#fff;
+  margin:5px;
+  padding:8px 0;
+  border-radius:5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.section button:hover {
+  background-color: rgb(255, 183, 40);
+}
+
+.section button:active {
+  background-color: rgb(248, 162, 13);
+}
