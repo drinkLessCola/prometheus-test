@@ -22,18 +22,58 @@ body{
   width:200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
 }
 
+.side-bar header{
+  position: relative;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin:10px 0;
+  font-size: 1.6rem;
+  color:black;
+}
+.side-bar header::after{
+  content: '';
+  position: absolute;
+  width:80%;
+  height:8px;
+  background-color: gold;
+  border-radius: 4px;
+  opacity: .4;
+  bottom:6px;
+  left:0;
+  right:0;
+  margin:0 auto;
+}
+.side-bar footer{
+  margin:20px 0;
+}
+
+.side-bar footer i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.side-bar footer i:hover path{
+  fill:gold;
+}
+.side-bar main {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
 .side-bar a{
   font-family: 'PingFang SC Medium';
   text-align: center;
   font-size: 1.2rem;
   width:100%;
   padding:10px 0;
-  margin:5px;
+  margin:5px 0;
   box-sizing: border-box;
   cursor: pointer;
   color:#555;
@@ -42,8 +82,10 @@ body{
   color:orange;
 }
 .side-bar a.active{
-  background-color: rgb(255, 245, 224);
-  color:orange;
+  /* background-color: rgb(255, 245, 224); */
+  background-color: #333;
+  color:rgb(255, 188, 64);
+  /* color:orange; */
 }
 
 .main{
