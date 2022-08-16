@@ -13,7 +13,11 @@ export default [
     element: <HttpRequest />
   },
   {
-    path: '/',
+    path: '/home',
     element: <Home />
+  },
+  {
+    path:'/',
+    element:<Navigate to="/home"/>
   }
 ];
