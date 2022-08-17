@@ -5,6 +5,7 @@ import './App.css'
 import routesTable from './routes'
 const App = () => {
   const getClassName = ({ isActive }) => (isActive ? "active" : "")
+  console.log('App render')
   return (
     <div className="App">
       <aside className='side-bar'>

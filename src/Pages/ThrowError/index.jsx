@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Section from '../../Component/Section'
 import { JSData, PromiseData, ResourceData } from './error'
 export default function ThrowError() {
-  
+  console.log('ThrowError render')
   useEffect(() => {
     function handleError(err){
       console.log(err.message, err)
