@@ -5,8 +5,8 @@ module.exports = (req, res) => {
 
   // 代理目标地址
   // 这里使用 backend 主要用于区分 vercel serverless 的 api 路径
-  if (req.url.startsWith('http://120.55.12.109:8080')) {
-    target = 'http://120.55.12.109:8080'
+  if (req.url.startsWith('/v1/api')) {
+    target = 'http://120.55.12.109:8080/v1/api'
   }
 
   // 创建代理对象并转发请求

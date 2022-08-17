@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const getResViaFetch = async (code) => {
-  const response = await fetch(`http://120.55.12.109:8080/v1/api/test/${code}`)
+  const response = await fetch(`/v1/api/test/${code}`)
   const res = await response.json()
 }
 
@@ -15,13 +15,13 @@ const getResViaXHR = (code) => {
       } else console.log(xhr.status)
     }
   })
-  xhr.open('GET', `http://120.55.12.109:8080/v1/api/test/${code}`)
+  xhr.open('GET', `/v1/api/test/${code}`)
   xhr.responseType = 'json'
   xhr.send(null)
 }
 
 const getResViaAxios = async (code) => {
-  axios.get(`http://120.55.12.109:8080/v1/api/test/${code}`).then(res => {
+  axios.get(`/v1/api/test/${code}`).then(res => {
     console.log(res)
   }).catch(err => {
     console.log(err)
