@@ -95,3 +95,7 @@ body{
   height:100vh;
   overflow: auto;
 }
+
+.link:hover path{
+  fill:gold;
+}
